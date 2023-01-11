@@ -232,9 +232,9 @@ function agregarDetalle(idarticulo,articulo)
     	var fila='<tr class="filas" id="fila'+cont+'">'+
     	'<td><button type="button" class="btn btn-danger" onclick="eliminarDetalle('+cont+')">X</button></td>'+
     	'<td><input type="hidden" name="idarticulo[]" value="'+idarticulo+'">'+articulo+'</td>'+
-    	'<td><input type="number" name="cantidad[]" id="cantidad[]" value="'+cantidad+'"></td>'+
-    	'<td><input type="number" name="precio_compra[]" id="precio_compra[]" value="'+precio_compra+'"></td>'+
-    	'<td><input type="number" name="precio_venta[]" value="'+precio_venta+'"></td>'+
+    	'<td><input type="text" name="cantidad[]" id="cantidad[]" value="'+cantidad+'"></td>'+
+    	'<td><input type="text" name="precio_compra[]" id="precio_compra[]" value="'+precio_compra+'"></td>'+
+    	'<td><input type="text" name="precio_venta[]" value="'+precio_venta+'"></td>'+
     	'<td><span name="subtotal" id="subtotal'+cont+'">'+subtotal+'</span></td>'+
     	'<td><button type="button" onclick="modificarSubototales()" class="btn btn-info"><i class="fa fa-refresh"></i></button></td>'+
     	'</tr>';
@@ -273,7 +273,7 @@ function agregarDetalle(idarticulo,articulo)
   	for (var i = 0; i <sub.length; i++) {
 		total += document.getElementsByName("subtotal")[i].value;
 	}
-	$("#total").html("S/. " + total);
+	$("#total").html("Q/. " + total);
     $("#total_compra").val(total);
     evaluar();
   }

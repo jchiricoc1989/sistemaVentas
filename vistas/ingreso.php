@@ -78,11 +78,11 @@ if ($_SESSION['compras']==1)
                           </div>
                           <div class="form-group col-lg-2 col-md-2 col-sm-6 col-xs-12">
                             <label>Serie:</label>
-                            <input type="text" class="form-control" name="serie_comprobante" id="serie_comprobante" maxlength="7" placeholder="Serie">
+                            <input type="text" class="form-control" name="serie_comprobante" id="serie_comprobante"  placeholder="Serie">
                           </div>
                           <div class="form-group col-lg-2 col-md-2 col-sm-6 col-xs-12">
                             <label>Número:</label>
-                            <input type="text" class="form-control" name="num_comprobante" id="num_comprobante" maxlength="10" placeholder="Número" required="">
+                            <input type="text" class="form-control" name="num_comprobante" id="num_comprobante"  placeholder="Número" required="">
                           </div>
                           <div class="form-group col-lg-2 col-md-2 col-sm-6 col-xs-12">
                             <label>Impuesto:</label>
@@ -110,7 +110,7 @@ if ($_SESSION['compras']==1)
                                     <th></th>
                                     <th></th>
                                     <th></th>
-                                    <th><h4 id="total">S/. 0.00</h4><input type="hidden" name="total_compra" id="total_compra"></th> 
+                                    <th><h4 id="total">Q/. 0.00</h4><input type="hidden" name="total_compra" id="total_compra"></th> 
                                 </tfoot>
                                 <tbody>
                                   
